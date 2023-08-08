@@ -1,0 +1,13 @@
+{
+  "web": {
+    "client_id": "717309199875-buvokvbri0m1g28aam3igr6kup8b1128.apps.googleusercontent.com",
+    "project_id": "pagu-395107",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": ["http://localhost/pagu/public/"],
+    "javascript_origins": ["http://localhost:8080"],
+    "api_key": "AIzaSyALKvo5xLRfkdd9do7zikNLRHvZCFp3LSs"
+  }
+}

@@ -1,0 +1,34 @@
+#wrapper {
+    transition: 0.3s;
+}
+
+#wrapper.toggled {
+    padding-left: 80px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+
+#sidebar.toggled {
+    margin-left: -250px;
+}
+
+.sidebar-brand {
+    padding: 1.5rem 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+    display: block;
+}
+
+.sidebar-icon {
+    font-size: 1.5rem;
+}
+
+#sidebarToggle {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}

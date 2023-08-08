@@ -1,0 +1,113 @@
+CRITICAL - 2023-08-08 03:56:00 --> Undefined variable $key
+in APPPATH\Views\dashboard.php on line 166.
+ 1 APPPATH\Views\dashboard.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 166)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-08 03:56:29 --> Undefined variable $tableData
+in APPPATH\Views\dashboard.php on line 175.
+ 1 APPPATH\Views\dashboard.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tableData', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 175)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-08 16:22:37 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 195.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-08 16:26:53 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 195.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-08 16:39:53 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 195.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-08 16:45:22 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 195.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-08-08 14:49:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_simangga', 3306, '', 0)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(88): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#4 C:\xampp\htdocs\pagu\app\Controllers\Home.php(12): App\Controllers\Home->getBidang()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pagu\app\Controllers\Home.php(88): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(12): App\Controllers\Home->getBidang()
+#4 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-08 14:49:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(88): CodeIgniter\Database\BaseConnection->query('SELECT distinct bidang FROM tbl_pagu')
+ 3 APPPATH\Controllers\Home.php(12): App\Controllers\Home->getBidang()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-08 14:57:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_simangga', 3306, '', 0)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(88): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#4 C:\xampp\htdocs\pagu\app\Controllers\Home.php(12): App\Controllers\Home->getBidang()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pagu\app\Controllers\Home.php(88): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(12): App\Controllers\Home->getBidang()
+#4 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-08 14:57:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(88): CodeIgniter\Database\BaseConnection->query('SELECT distinct bidang FROM tbl_pagu')
+ 3 APPPATH\Controllers\Home.php(12): App\Controllers\Home->getBidang()
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-08 14:58:02 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-08 14:59:42 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-08 15:01:01 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

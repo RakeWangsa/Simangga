@@ -1,0 +1,981 @@
+CRITICAL - 2023-08-07 03:28:18 --> Call to undefined method App\Controllers\Dashboard::getDataTabel()
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 03:28:39 --> Call to undefined method App\Controllers\Dashboard::getDataTabel()
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 03:38:52 --> Call to undefined method App\Controllers\Dashboard::getKegiatan()
+in APPPATH\Controllers\Dashboard.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 03:39:14 --> Too few arguments to function App\Controllers\Dashboard::get_kegiatan(), 0 passed in C:\xampp\htdocs\pagu\app\Controllers\Dashboard.php on line 14 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 50.
+ 1 APPPATH\Controllers\Dashboard.php(14): App\Controllers\Dashboard->get_kegiatan()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 03:39:44 --> Too few arguments to function App\Controllers\Dashboard::get_kegiatan(), 0 passed in C:\xampp\htdocs\pagu\app\Controllers\Dashboard.php on line 14 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 50.
+ 1 APPPATH\Controllers\Dashboard.php(14): App\Controllers\Dashboard->get_kegiatan()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 03:42:16 --> Too few arguments to function App\Controllers\Dashboard::get_kegiatan(), 0 passed in C:\xampp\htdocs\pagu\app\Controllers\Dashboard.php on line 14 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 50.
+ 1 APPPATH\Controllers\Dashboard.php(14): App\Controllers\Dashboard->get_kegiatan()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 03:56:24 --> Call to undefined method App\Controllers\Dashboard::get_kegiatan()
+in APPPATH\Controllers\Dashboard.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 04:15:49 --> Undefined array key 0
+in APPPATH\Controllers\Dashboard.php on line 14.
+ 1 APPPATH\Controllers\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Dashboard.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 04:16:33 --> Object of class CodeIgniter\HTTP\ContentSecurityPolicy could not be converted to string
+in APPPATH\Views\dashboard.php on line 61.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 04:16:55 --> Object of class CodeIgniter\HTTP\ContentSecurityPolicy could not be converted to string
+in APPPATH\Views\dashboard.php on line 61.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 04:19:51 --> Object of class CodeIgniter\HTTP\ContentSecurityPolicy could not be converted to string
+in APPPATH\Views\dashboard.php on line 61.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 05:11:32 --> Object of class CodeIgniter\HTTP\ContentSecurityPolicy could not be converted to string
+in APPPATH\Views\dashboard.php on line 61.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 05:20:30 --> Object of class CodeIgniter\HTTP\ContentSecurityPolicy could not be converted to string
+in APPPATH\Views\dashboard.php on line 61.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 05:22:12 --> Object of class CodeIgniter\HTTP\ContentSecurityPolicy could not be converted to string
+in APPPATH\Views\dashboard.php on line 61.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 06:13:18 --> Call to undefined method App\Controllers\Dashboard::get_kegiatan()
+in APPPATH\Controllers\Dashboard.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 06:14:44 --> Undefined variable $selectedProgram
+in APPPATH\Views\dashboard.php on line 30.
+ 1 APPPATH\Views\dashboard.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedProgram', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 30)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(17): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 06:15:41 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Dashboard.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Dashboard.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dashboard')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Dashboard', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 07:26:36 --> Undefined variable $kegiatanData
+in APPPATH\Controllers\Dashboard.php on line 17.
+ 1 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kegiatanData', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Dashboard.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 12:13:37 --> {
+  "error": {
+    "code": 400,
+    "message": "Unable to parse range: drop down!A3:A4",
+    "errors": [
+      {
+        "message": "Unable to parse range: drop down!A3:A4",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(40): Google\Service\Sheets\Resource\SpreadsheetsValues->get('178U19eBIKshTNApuXQknR1JkkrQd5P3MrhpZxW1OjkY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 12:13:55 --> {
+  "error": {
+    "code": 400,
+    "message": "Unable to parse range: drop down!A3:A4",
+    "errors": [
+      {
+        "message": "Unable to parse range: drop down!A3:A4",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(40): Google\Service\Sheets\Resource\SpreadsheetsValues->get('178U19eBIKshTNApuXQknR1JkkrQd5P3MrhpZxW1OjkY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:00:19 --> Undefined variable $range
+in APPPATH\Controllers\Dashboard.php on line 41.
+ 1 APPPATH\Controllers\Dashboard.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $range', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Dashboard.php', 41)
+ 2 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:09:43 --> Undefined property: App\Controllers\Dashboard::$config
+in APPPATH\Controllers\Dashboard.php on line 20.
+ 1 APPPATH\Controllers\Dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard::$config', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Dashboard.php', 20)
+ 2 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:13:06 --> Class "Config\GoogleConfig" not found
+in APPPATH\Controllers\Dashboard.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:13:22 --> Class "App\Controllers\GoogleConfig" not found
+in APPPATH\Controllers\Dashboard.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:13:37 --> Class "Config\Google_config" not found
+in APPPATH\Controllers\Dashboard.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:14:00 --> Class "Config\Googleconfig" not found
+in APPPATH\Controllers\Dashboard.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:14:36 --> Undefined property: Config\GoogleConfig::$GoogleConfig
+in APPPATH\Controllers\Dashboard.php on line 28.
+ 1 APPPATH\Controllers\Dashboard.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\GoogleConfig::$GoogleConfig', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Dashboard.php', 28)
+ 2 APPPATH\Controllers\Dashboard.php(21): App\Controllers\Dashboard->getProgram()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:15:05 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(44): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(21): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:16:49 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(41): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(21): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:19:47 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(33): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:20:04 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(41): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:20:28 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(41): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:22:06 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(41): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:25:35 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(41): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:26:14 --> {
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "errors": [
+      {
+        "message": "The caller does not have permission",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ],
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(41): Google\Service\Sheets\Resource\SpreadsheetsValues->get('1j6V68MEy5F78cqOtQlQmpIa0RzgmVCKwkISjy0_h7dY', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(13): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:30:23 --> Class "App\Controllers\GoogleConfig" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:31:38 --> Class "App\Controllers\GoogleConfig" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:32:09 --> Class "App\Controllers\GoogleConfig" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:34:14 --> {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "API_KEY_INVALID",
+        "domain": "googleapis.com",
+        "metadata": {
+          "service": "sheets.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+
+in VENDORPATH\google\apiclient\src\Http\REST.php on line 134.
+ 1 VENDORPATH\google\apiclient\src\Http\REST.php(107): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 2 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 3 VENDORPATH\google\apiclient\src\Task\Runner.php(187): call_user_func_array([...], [...])
+ 4 VENDORPATH\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+ 5 VENDORPATH\google\apiclient\src\Client.php(926): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange', [], null)
+ 6 VENDORPATH\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\Sheets\\ValueRange')
+ 7 VENDORPATH\google\apiclient-services\src\Sheets\Resource\SpreadsheetsValues.php(241): Google\Service\Resource->call('get', [...], 'Google\\Service\\Sheets\\ValueRange')
+ 8 APPPATH\Controllers\Dashboard.php(50): Google\Service\Sheets\Resource\SpreadsheetsValues->get('YOUR_SPREADSHEET_ID', 'drop down!A3:A4')
+ 9 APPPATH\Controllers\Dashboard.php(21): App\Controllers\Dashboard->getProgram()
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:53:21 --> Call to undefined method App\Controllers\Dashboard::getUniqueValuesFromColumnA()
+in APPPATH\Controllers\Dashboard.php on line 81.
+ 1 APPPATH\Controllers\Dashboard.php(14): App\Controllers\Dashboard->getBidang()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:55:40 --> Call to undefined method App\Controllers\Dashboard::getUniqueValuesFromColumnA()
+in APPPATH\Controllers\Dashboard.php on line 42.
+ 1 APPPATH\Controllers\Dashboard.php(50): App\Controllers\Dashboard->getBidang()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 13:56:22 --> Call to undefined method App\Controllers\Dashboard::getUniqueValuesFromColumnA()
+in APPPATH\Controllers\Dashboard.php on line 81.
+ 1 APPPATH\Controllers\Dashboard.php(40): App\Controllers\Dashboard->getBidang()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 15:52:59 --> Undefined variable $bidangList
+in APPPATH\Views\dashboard.php on line 27.
+ 1 APPPATH\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidangList', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 15:55:24 --> Undefined variable $bidangList
+in APPPATH\Views\dashboard.php on line 27.
+ 1 APPPATH\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidangList', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 15:56:45 --> Undefined variable $bidangList
+in APPPATH\Views\dashboard.php on line 27.
+ 1 APPPATH\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidangList', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 15:58:02 --> Undefined variable $bidangList
+in APPPATH\Views\dashboard.php on line 27.
+ 1 APPPATH\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidangList', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 15:59:19 --> Undefined variable $result
+in APPPATH\Views\dashboard.php on line 27.
+ 1 APPPATH\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 16:01:06 --> Undefined variable $result
+in APPPATH\Views\dashboard.php on line 27.
+ 1 APPPATH\Views\dashboard.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:03:59 --> Undefined variable $bidangList
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidangList', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 16:04:16 --> Undefined variable $result
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 16:04:37 --> Undefined variable $bidangList
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $bidangList', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 16:06:16 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:06:16 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pagu\\public\\index.php')
+CRITICAL - 2023-08-07 16:07:08 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:07:13 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:07:45 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:08:18 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:12:50 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:13:20 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:16:26 --> Cannot access offset of type string on string
+in APPPATH\Views\dashboard.php on line 13.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Dashboard.php(18): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:54:07 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 28.
+ 1 APPPATH\Views\dashboard.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:54:48 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 28.
+ 1 APPPATH\Views\dashboard.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:55:54 --> Undefined variable $programData
+in APPPATH\Views\dashboard.php on line 78.
+ 1 APPPATH\Views\dashboard.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $programData', 'C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php', 78)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\pagu\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-07 16:57:57 --> mysqli_sql_exception: Table 'dbpagu.kd_program' doesn't exist in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM k...', 0)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM k...')
+#2 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM k...')
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('SELECT * FROM k...')
+#4 C:\xampp\htdocs\pagu\app\Controllers\Home.php(13): App\Controllers\Home->getPrograms()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-07 16:57:57 --> Table 'dbpagu.kd_program' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM kd_program WHERE bidang = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM kd_program WHERE bidang = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM kd_program WHERE bidang = \'\'')
+ 4 APPPATH\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('SELECT * FROM kd_program WHERE bidang = \'\'')
+ 5 APPPATH\Controllers\Home.php(13): App\Controllers\Home->getPrograms()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-07 16:58:41 --> mysqli_sql_exception: Table 'dbpagu.dbpagu' doesn't exist in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT kd_progr...', 0)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT kd_progr...')
+#2 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_progr...')
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('SELECT kd_progr...')
+#4 C:\xampp\htdocs\pagu\app\Controllers\Home.php(13): App\Controllers\Home->getPrograms()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-07 16:58:41 --> Table 'dbpagu.dbpagu' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT kd_program FROM dbpagu WHERE bidang = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT kd_program FROM dbpagu WHERE bidang = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_program FROM dbpagu WHERE bidang = \'\'')
+ 4 APPPATH\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('SELECT kd_program FROM dbpagu WHERE bidang = \'\'')
+ 5 APPPATH\Controllers\Home.php(13): App\Controllers\Home->getPrograms()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-07 16:58:43 --> mysqli_sql_exception: Table 'dbpagu.dbpagu' doesn't exist in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT kd_progr...', 0)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT kd_progr...')
+#2 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_progr...')
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('SELECT kd_progr...')
+#4 C:\xampp\htdocs\pagu\app\Controllers\Home.php(13): App\Controllers\Home->getPrograms()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-07 16:58:43 --> Table 'dbpagu.dbpagu' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT kd_program FROM dbpagu WHERE bidang = \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT kd_program FROM dbpagu WHERE bidang = \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_program FROM dbpagu WHERE bidang = \'\'')
+ 4 APPPATH\Controllers\Home.php(23): CodeIgniter\Database\BaseConnection->query('SELECT kd_program FROM dbpagu WHERE bidang = \'\'')
+ 5 APPPATH\Controllers\Home.php(13): App\Controllers\Home->getPrograms()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 16:59:10 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Views\dashboard.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 17:00:46 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Views\dashboard.php on line 28.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('dashboard', [], true)
+ 4 APPPATH\Controllers\Home.php(15): view('dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 17:04:28 --> Undefined variable $programData
+in APPPATH\Controllers\Home.php on line 14.
+ 1 APPPATH\Controllers\Home.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $programData', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Home.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 17:32:10 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\pagu\app\Controllers\Home.php on line 14
+in SYSTEMPATH\BaseModel.php on line 601.
+ 1 APPPATH\Controllers\Home.php(14): CodeIgniter\BaseModel->findAll('bidang')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-07 18:22:51 --> mysqli_sql_exception: Unknown column 'nama_program' in 'field list' in C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagu\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT kd_progr...', 0)
+#1 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT kd_progr...')
+#2 C:\xampp\htdocs\pagu\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_progr...')
+#3 C:\xampp\htdocs\pagu\app\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SELECT kd_progr...', Array)
+#4 C:\xampp\htdocs\pagu\system\CodeIgniter.php(932): App\Controllers\Home->getPrograms()
+#5 C:\xampp\htdocs\pagu\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\pagu\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\pagu\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-08-07 18:22:51 --> Unknown column 'nama_program' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT kd_program, nama_program FROM tbl_pagu WHERE bidang = \'PPA I\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT kd_program, nama_program FROM tbl_pagu WHERE bidang = \'PPA I\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT kd_program, nama_program FROM tbl_pagu WHERE bidang = \'PPA I\'')
+ 4 APPPATH\Controllers\Home.php(21): CodeIgniter\Database\BaseConnection->query('SELECT kd_program, nama_program FROM tbl_pagu WHERE bidang = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->getPrograms()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 20:35:13 --> syntax error, unexpected identifier "SELECT", expecting ")"
+in APPPATH\Controllers\Home.php on line 54.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 21:39:38 --> Undefined variable $selectedBidang
+in APPPATH\Controllers\Home.php on line 33.
+ 1 APPPATH\Controllers\Home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedBidang', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Home.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->getKegiatan()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 21:39:43 --> Undefined variable $selectedBidang
+in APPPATH\Controllers\Home.php on line 33.
+ 1 APPPATH\Controllers\Home.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedBidang', 'C:\\xampp\\htdocs\\pagu\\app\\Controllers\\Home.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->getKegiatan()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
