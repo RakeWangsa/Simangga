@@ -79,7 +79,8 @@
                                 </div>
                                 <div class="col-md-6 mt-4">
                                     <button type="button" name="filter" id="filter" class="btn btn-dark">Filter</button>
-                                    <button type="button" name="reset" id="reset" class="btn btn-dark">Reset</button>
+                                    <!-- <button type="button" name="reset" id="reset" class="btn btn-dark">Reset</button> -->
+                                    <a href="" class="btn btn-dark">Reset</a>
                                 </div>
                             </div>
                         </div>
@@ -246,13 +247,15 @@
 </script>
 
 <script>
+    const bidangSelect2 = document.getElementById('bidang');
     const programSelect2 = document.getElementById('program');
     const kegiatanSelect = document.getElementById('kegiatan');
 
     programSelect2.addEventListener('change', () => {
+        const selectedBidang = bidangSelect2.value;
         const selectedProgram = programSelect2.value;
 
-        fetch(`home/get-kegiatan?program=${selectedProgram}`)
+        fetch(`home/get-kegiatan?bidang=${selectedBidang}&program=${selectedProgram}`)
             .then(response => response.json())
             .then(data => {
                 kegiatanSelect.innerHTML = ''; // Clear existing options
@@ -274,13 +277,17 @@
 </script>
 
 <script>
+    const bidangSelect3 = document.getElementById('bidang');
+    const programSelect3 = document.getElementById('program');
     const kegiatanSelect2 = document.getElementById('kegiatan');
     const kroSelect = document.getElementById('kro');
 
     kegiatanSelect2.addEventListener('change', () => {
+        const selectedBidang = bidangSelect3.value;
+        const selectedProgram = programSelect3.value;
         const selectedKegiatan = kegiatanSelect2.value;
 
-        fetch(`home/get-kro?kegiatan=${selectedKegiatan}`)
+        fetch(`home/get-kro?bidang=${selectedBidang}&program=${selectedProgram}&kegiatan=${selectedKegiatan}`)
             .then(response => response.json())
             .then(data => {
                 kroSelect.innerHTML = ''; // Clear existing options
@@ -304,13 +311,19 @@
 </script>
 
 <script>
+    const bidangSelect4 = document.getElementById('bidang');
+    const programSelect4 = document.getElementById('program');
+    const kegiatanSelect3 = document.getElementById('kegiatan');
     const kroSelect2 = document.getElementById('kro');
     const roSelect = document.getElementById('ro');
 
     kroSelect2.addEventListener('change', () => {
+        const selectedBidang = bidangSelect4.value;
+        const selectedProgram = programSelect4.value;
+        const selectedKegiatan = kegiatanSelect3.value;
         const selectedKRO = kroSelect2.value;
 
-        fetch(`home/get-ro?kro=${selectedKRO}`)
+        fetch(`home/get-ro?bidang=${selectedBidang}&program=${selectedProgram}&kegiatan=${selectedKegiatan}&kro=${selectedKRO}`)
             .then(response => response.json())
             .then(data => {
                 roSelect.innerHTML = ''; // Clear existing options
@@ -334,13 +347,21 @@
 </script>
 
 <script>
+    const bidangSelect5 = document.getElementById('bidang');
+    const programSelect5 = document.getElementById('program');
+    const kegiatanSelect4 = document.getElementById('kegiatan');
+    const kroSelect3 = document.getElementById('kro');
     const roSelect2 = document.getElementById('ro');
     const komponenSelect = document.getElementById('komponen');
 
     roSelect2.addEventListener('change', () => {
-        const selectedKRO = roSelect2.value;
+        const selectedBidang = bidangSelect5.value;
+        const selectedProgram = programSelect5.value;
+        const selectedKegiatan = kegiatanSelect4.value;
+        const selectedKRO = kroSelect3.value;
+        const selectedRO = roSelect2.value;
 
-        fetch(`home/get-komponen?ro=${selectedKRO}`)
+        fetch(`home/get-komponen?bidang=${selectedBidang}&program=${selectedProgram}&kegiatan=${selectedKegiatan}&kro=${selectedKRO}&ro=${selectedRO}`)
             .then(response => response.json())
             .then(data => {
                 komponenSelect.innerHTML = ''; // Clear existing options
@@ -364,13 +385,23 @@
 </script>
 
 <script>
+    const bidangSelect6 = document.getElementById('bidang');
+    const programSelect6 = document.getElementById('program');
+    const kegiatanSelect5 = document.getElementById('kegiatan');
+    const kroSelect4 = document.getElementById('kro');
+    const roSelect3 = document.getElementById('ro');
     const komponenSelect2 = document.getElementById('komponen');
     const subKomponenSelect = document.getElementById('subkomponen');
 
     komponenSelect2.addEventListener('change', () => {
+        const selectedBidang = bidangSelect6.value;
+        const selectedProgram = programSelect6.value;
+        const selectedKegiatan = kegiatanSelect5.value;
+        const selectedKRO = kroSelect4.value;
+        const selectedRO = roSelect3.value;
         const selectedKomponen = komponenSelect2.value;
 
-        fetch(`home/get-subkomponen?komponen=${selectedKomponen}`)
+        fetch(`home/get-subkomponen?bidang=${selectedBidang}&program=${selectedProgram}&kegiatan=${selectedKegiatan}&kro=${selectedKRO}&ro=${selectedRO}&komponen=${selectedKomponen}`)
             .then(response => response.json())
             .then(data => {
                 subKomponenSelect.innerHTML = ''; // Clear existing options
