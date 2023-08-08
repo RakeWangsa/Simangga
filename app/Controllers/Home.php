@@ -32,8 +32,8 @@ class Home extends BaseController
         $db = \Config\Database::connect();
         $query = $db->query("SELECT * FROM tbl_pagu WHERE bidang = ? AND kd_program = ? AND kd_kegiatan = ? AND kd_kro = ? AND kd_ro = ? AND kd_komponen = ? AND kd_sub_komponen = ?", [$selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen]);
         $result = $query->getResultArray();
-        var_dump($result);
-        return view('dashboard');
+        // var_dump($result);
+        return view('dashboard', ['selectedBidang' => $selectedBidang, 'selectedProgram' => $selectedProgram, 'selectedKegiatan' => $selectedKegiatan, 'selectedKro' => $selectedKro, 'selectedRo' => $selectedRo, 'selectedKomponen' =>  $selectedKomponen, 'selectedSubkomponen' => $selectedSubkomponen, 'result' => $result]);
     }
 
     public function getPrograms()

@@ -26,16 +26,24 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="bidang" class="form-label">Bidang/Bagian</label>
-                                    <select class="form-select" id="bidang" name="bidang">
+                                    <select class="form-select" id="bidang" name="bidang" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <?php if (isset($result)): ?>
+                                        <option value="<?= $selectedBidang ?>"><?= $selectedBidang ?></option>
+                                    <?php else: ?>
                                         <?php foreach ($bidangData as $bidangRow) : ?>
                                             <option value="<?= esc($bidangRow['bidang']) ?>"><?= esc($bidangRow['bidang']) ?></option>
                                         <?php endforeach; ?>
+                                    <?php endif; ?>
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="program" class="form-label">Program</label>
-                                    <select class="form-select" id="program" name="program">
-                                        <!-- Options for Form 2 -->
+                                    <select class="form-select" id="program" name="program" <?php if (isset($result)) echo 'disabled'; ?>>
+                                        <?php if (isset($result)): ?>
+                                            <option value="<?= $selectedProgram ?>"><?= $selectedProgram ?></option>
+                                        <?php else: ?>
+                                            <!-- Options for Form 2 -->
+                                        <?php endif; ?>
                                     </select>
                                 </div>
                             </div>
@@ -44,14 +52,22 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="kegiatan" class="form-label">Kegiatan</label>
-                                    <select class="form-select" id="kegiatan" name="kegiatan">
-                                        <!-- Options for Form 3 -->
+                                    <select class="form-select" id="kegiatan" name="kegiatan" <?php if (isset($result)) echo 'disabled'; ?>>
+                                        <?php if (isset($result)): ?>
+                                            <option value="<?= $selectedKegiatan ?>"><?= $selectedKegiatan ?></option>
+                                        <?php else: ?>
+                                            <!-- Options for Form 3 -->
+                                        <?php endif; ?>
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="kro" class="form-label">KRO</label>
-                                    <select class="form-select" id="kro" name="kro">
-                                        <!-- Options for Form 4 -->
+                                    <select class="form-select" id="kro" name="kro" <?php if (isset($result)) echo 'disabled'; ?>>
+                                        <<?php if (isset($result)): ?>
+                                            <option value="<?= $selectedKro ?>"><?= $selectedKro ?></option>
+                                        <?php else: ?>
+                                            <!-- Options for Form 4 -->
+                                        <?php endif; ?>
                                     </select>
                                 </div>
                             </div>
@@ -60,14 +76,22 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="ro" class="form-label">RO</label>
-                                    <select class="form-select" id="ro" name="ro">
-                                        <!-- Options for Form 3 -->
+                                    <select class="form-select" id="ro" name="ro" <?php if (isset($result)) echo 'disabled'; ?>>
+                                        <?php if (isset($result)): ?>
+                                            <option value="<?= $selectedRo ?>"><?= $selectedRo ?></option>
+                                        <?php else: ?>
+                                            <!-- Options for Form 5 -->
+                                        <?php endif; ?>
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="komponen" class="form-label">Komponen</label>
-                                    <select class="form-select" id="komponen" name="komponen">
-                                        <!-- Options for Form 4 -->
+                                    <select class="form-select" id="komponen" name="komponen" <?php if (isset($result)) echo 'disabled'; ?>>
+                                        <?php if (isset($result)): ?>
+                                            <option value="<?= $selectedKomponen ?>"><?= $selectedKomponen ?></option>
+                                        <?php else: ?>
+                                            <!-- Options for Form 6 -->
+                                        <?php endif; ?>
                                     </select>
                                 </div>
                             </div>
@@ -76,14 +100,19 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="subkomponen" class="form-label">Subkomponen</label>
-                                    <select class="form-select" id="subkomponen" name="subkomponen">
+                                    <select class="form-select" id="subkomponen" name="subkomponen" <?php if (isset($result)) echo 'disabled'; ?>>
+                                        <?php if (isset($result)): ?>
+                                            <option value="<?= $selectedSubkomponen ?>"><?= $selectedSubkomponen ?></option>
+                                        <?php else: ?>
+                                            <!-- Options for Form 7 -->
+                                        <?php endif; ?>
                                     </select>
                                 </div>
                                 <div class="col-md-6 mt-4">
                                     <!-- <button type="button" name="filter" id="filter" class="btn btn-dark">Filter</button> -->
                                     <button type="submit" class="btn btn-dark">Filter</button>
                                     <!-- <button type="button" name="reset" id="reset" class="btn btn-dark">Reset</button> -->
-                                    <a href="" class="btn btn-dark">Reset</a>
+                                    <a href="<?= site_url('/') ?>" class="btn btn-dark">Reset</a>
                                 </div>
                             </div>
                         </div>
@@ -142,28 +171,44 @@
                         <div class="dashboard-box">
                             <i class="fas fa-money-bill-wave dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Pagu</p>
-                            <p class="dashboard-box-value">100,000,000</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['pagu'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="col-md-3 mb-4">
                         <div class="dashboard-box">
                             <i class="fas fa-chart-line dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Realisasi</p>
-                            <p class="dashboard-box-value">75,000,000</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['e_realisasi'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="col-md-3 mb-4">
                         <div class="dashboard-box">
                             <i class="fas fa-coins dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Sisa Pagu</p>
-                            <p class="dashboard-box-value">25,000,000</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['sisa_pagu'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="col-md-3 mb-4">
                         <div class="dashboard-box">
                             <i class="fas fa-percent dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Persentase</p>
-                            <p class="dashboard-box-value">75%</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['realisasi'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -182,30 +227,27 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                            </tr>
+                            <?php if (isset($result)): ?>
+                                <?php foreach ($result as $row): ?>
+                                    <tr>
+                                        <td><?= $row['program'] ?></td>
+                                        <td><?= $row['kegiatan'] ?></td>
+                                        <td><?= $row['kro'] ?></td>
+                                        <td><?= $row['ro'] ?></td>
+                                        <td><?= $row['komponen'] ?></td>
+                                        <td><?= $row['detail'] ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            <?php endif; ?>
                         </tbody>
                     </table>
                 </div>
