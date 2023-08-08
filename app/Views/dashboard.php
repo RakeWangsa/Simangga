@@ -21,10 +21,12 @@
                 <div class="box-flex" style="background-color: #f4f4f4; padding:24px">
                     <div class="row">
                         <div class="col-md-3">
+
+                        <form action="<?= site_url('/home/filter') ?>" method="post">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="bidang" class="form-label">Bidang/Bagian</label>
-                                    <select class="form-select" id="bidang">
+                                    <select class="form-select" id="bidang" name="bidang">
                                         <?php foreach ($bidangData as $bidangRow) : ?>
                                             <option value="<?= esc($bidangRow['bidang']) ?>"><?= esc($bidangRow['bidang']) ?></option>
                                         <?php endforeach; ?>
@@ -78,13 +80,15 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6 mt-4">
-                                    <button type="button" name="filter" id="filter" class="btn btn-dark">Filter</button>
+                                    <!-- <button type="button" name="filter" id="filter" class="btn btn-dark">Filter</button> -->
+                                    <button type="submit" class="btn btn-dark">Filter</button>
                                     <!-- <button type="button" name="reset" id="reset" class="btn btn-dark">Reset</button> -->
                                     <a href="" class="btn btn-dark">Reset</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </form>
 
                 </div>
                 <!-- Data Tabel 2 -->

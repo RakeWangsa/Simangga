@@ -21,12 +21,19 @@ class Home extends BaseController
 
     public function filter()
     {
-        $bidangData = $this->getBidang();
-        // $db = \Config\Database::connect();
-        
-        // $query = $db->query("SELECT distinct kd_kegiatan FROM tbl_pagu WHERE bidang = ? AND kd_program = ?", ["SKKI","CD"]);
-        // var_dump($query);
-        return view('dashboard', ['bidangData' => $bidangData]);
+        $selectedBidang = $this->request->getPost('bidang');
+        $selectedProgram = $this->request->getPost('program');
+        $selectedKegiatan = $this->request->getPost('kegiatan');
+        $selectedKro = $this->request->getPost('kro');
+        $selectedRo = $this->request->getPost('ro');
+        $selectedKomponen = $this->request->getPost('komponen');
+        $selectedSubkomponen = $this->request->getPost('subkomponen');
+        // var_dump($selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen);
+        $db = \Config\Database::connect();
+        $query = $db->query("SELECT * FROM tbl_pagu WHERE bidang = ? AND kd_program = ? AND kd_kegiatan = ? AND kd_kro = ? AND kd_ro = ? AND kd_komponen = ? AND kd_sub_komponen = ?", [$selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen]);
+        $result = $query->getResultArray();
+        var_dump($result);
+        return view('dashboard');
     }
 
     public function getPrograms()
