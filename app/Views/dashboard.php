@@ -13,8 +13,13 @@
     <div class="d-flex" id="wrapper">
 
         <div id="page-content-wrapper" class="container-fluid" style="height: calc(100vh - 56px); overflow-y: auto;">
-            <header class="bg-white p-3">
+            <header class="bg-white p-3 d-flex justify-content-between align-items-center">
                 <h4>Dashboard</h4>
+                <div>
+                    <span class="text-right"><span class="text-right">
+            <a href="<?= site_url('/logout') ?>" class="text-decoration-none">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </span></span>
+                </div>
             </header>
 
             <div class="container-fluid mt-3 flex-grow-1 overflow-auto">

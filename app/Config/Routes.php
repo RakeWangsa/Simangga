@@ -39,6 +39,7 @@ $routes->get('/home/get-komponen', 'Home::getKomponen');
 $routes->get('/home/get-subkomponen', 'Home::getSubKomponen');
 $routes->get('/login', 'Home::login');
 $routes->post('/login/cek', 'Home::cek');
+$routes->get('/logout', 'Home::logout');
 $routes->get('/register', 'Home::register');
 $routes->post('/register/submit', 'Home::registerSubmit');
 

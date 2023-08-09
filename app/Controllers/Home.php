@@ -10,6 +10,7 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use App\Models\UserModel;
+use CodeIgniter\Session\Session;
 
 
 
@@ -17,8 +18,18 @@ use App\Models\UserModel;
 class Home extends BaseController
 {
     // Di dalam controller
+    protected $session;
+
+    public function __construct()
+    {
+        $this->session = session();
+    }
+
     public function index()
     {
+        if (!$this->session->get('logged_in')) {
+            return redirect()->to('/login');
+        }
         $bidangData = $this->getBidang();
         // $db = \Config\Database::connect();
         
@@ -44,13 +55,20 @@ class Home extends BaseController
         $user = $userModel->where('nama', $nama)->first();
     
         if ($user && password_verify($password, $user['password'])) {
+            $this->session->set('logged_in', true);
+            $this->session->set('nama', $nama);
             return redirect()->to('/');
         } else {
             return redirect()->to('/login');
         }
-        
-        
     }
+
+    public function logout()
+    {
+        $this->session->destroy(); // Menghapus semua data session
+        return redirect()->to('/login');
+    }
+
 
     public function register()
     {
@@ -77,6 +95,9 @@ class Home extends BaseController
 
     public function filter()
     {
+        if (!$this->session->get('logged_in')) {
+            return redirect()->to('/login');
+        }
         $selectedBidang = $this->request->getPost('bidang');
         $selectedProgram = $this->request->getPost('program');
         $selectedKegiatan = $this->request->getPost('kegiatan');
