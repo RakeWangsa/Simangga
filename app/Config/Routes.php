@@ -37,6 +37,10 @@ $routes->get('/home/get-kro', 'Home::getKRO');
 $routes->get('/home/get-ro', 'Home::getRO');
 $routes->get('/home/get-komponen', 'Home::getKomponen');
 $routes->get('/home/get-subkomponen', 'Home::getSubKomponen');
+$routes->get('/login', 'Home::login');
+$routes->post('/login/cek', 'Home::cek');
+$routes->get('/register', 'Home::register');
+$routes->post('/register/submit', 'Home::registerSubmit');
 
 
 

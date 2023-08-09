@@ -4,6 +4,14 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use CodeIgniter\Debug\VarDump;
+use CodeIgniter\I18n\Time;
+use CodeIgniter\Controller;
+use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\ResponseInterface;
+use Psr\Log\LoggerInterface;
+use App\Models\UserModel;
+
+
 
 
 class Home extends BaseController
@@ -17,6 +25,54 @@ class Home extends BaseController
         // $query = $db->query("SELECT distinct kd_kegiatan FROM tbl_pagu WHERE bidang = ? AND kd_program = ?", ["SKKI","CD"]);
         // var_dump($query);
         return view('dashboard', ['bidangData' => $bidangData]);
+    }
+
+    public function login()
+    {
+        return view('login');
+    }
+
+    public function cek()
+    {
+        
+        $nama = $this->request->getPost('nama');
+        $email = $this->request->getPost('email');
+        $password = $this->request->getPost('password');
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        var_dump($nama,$email,$password,$hashedPassword);
+        $userModel = new UserModel();
+        $user = $userModel->where('nama', $nama)->first();
+    
+        if ($user && password_verify($password, $user['password'])) {
+            return redirect()->to('/');
+        } else {
+            return redirect()->to('/login');
+        }
+        
+        
+    }
+
+    public function register()
+    {
+        return view('register');
+    }
+
+    public function registerSubmit()
+    {
+        
+        $nama = $this->request->getPost('nama');
+        $email = $this->request->getPost('email');
+        $password = $this->request->getPost('password');
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $userModel = new UserModel();
+        $data = [
+            'nama' => $nama,
+            'email' => $email,
+            'password' => $hashedPassword,
+        ];
+        $userModel->insert($data);
+        return view('login');
     }
 
     public function filter()
