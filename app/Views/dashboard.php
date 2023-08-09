@@ -3,6 +3,7 @@
 
 <head>
     <!-- head section here -->
+    <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url('assets/custom.css') ?>">
     <script src="<?= base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
@@ -171,51 +172,43 @@
                     }
                 </style>
 
-                <div class="row mt-4">
-                    <div class="col-md-3 mb-4">
-                        <div class="dashboard-box">
-                            <i class="fas fa-money-bill-wave dashboard-box-icon"></i>
-                            <p class="dashboard-box-label">Pagu</p>
+                
+            </div>
+            <div class="row mt-2 tabel">
+                <div class="col">
+                    <table class="table caption-top">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col"><i class="fas fa-money-bill-wave dashboard-box-icon"></i> Pagu</th>
+                                <th scope="col"><i class="fas fa-chart-line dashboard-box-icon"></i> Realisasi</th>
+                                <th scope="col"><i class="fas fa-coins dashboard-box-icon"></i> Sisa Pagu</th>
+                                <th scope="col"><i class="fas fa-percent dashboard-box-icon"></i> Persentase</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                             <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['pagu'] ?></p>
+                                <?php $no = 1; ?>
+                                <?php foreach ($result as $row): ?>
+                                    <tr>
+                                        <td><?= $no++ ?></td>
+                                        <td><?= $row['pagu'] ?></td>
+                                        <td><?= $row['e_realisasi'] ?></td>
+                                        <td><?= $row['sisa_pagu'] ?></td>
+                                        <td><?= $row['realisasi'] ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
                             <?php else: ?>
-                                <p class="dashboard-box-value">-</p>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
                             <?php endif; ?>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="dashboard-box">
-                            <i class="fas fa-chart-line dashboard-box-icon"></i>
-                            <p class="dashboard-box-label">Realisasi</p>
-                            <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['e_realisasi'] ?></p>
-                            <?php else: ?>
-                                <p class="dashboard-box-value">-</p>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="dashboard-box">
-                            <i class="fas fa-coins dashboard-box-icon"></i>
-                            <p class="dashboard-box-label">Sisa Pagu</p>
-                            <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['sisa_pagu'] ?></p>
-                            <?php else: ?>
-                                <p class="dashboard-box-value">-</p>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="dashboard-box">
-                            <i class="fas fa-percent dashboard-box-icon"></i>
-                            <p class="dashboard-box-label">Persentase</p>
-                            <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['realisasi'] ?></p>
-                            <?php else: ?>
-                                <p class="dashboard-box-value">-</p>
-                            <?php endif; ?>
-                        </div>
-                    </div>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="row mt-2 tabel">
@@ -223,6 +216,7 @@
                     <table class="table caption-top">
                         <thead>
                             <tr>
+                                <th scope="col">No</th>
                                 <th scope="col">Program</th>
                                 <th scope="col">Kegiatan</th>
                                 <th scope="col">KRO</th>
@@ -233,8 +227,10 @@
                         </thead>
                         <tbody>
                             <?php if (isset($result)): ?>
+                                <?php $no = 1; ?>
                                 <?php foreach ($result as $row): ?>
                                     <tr>
+                                        <td><?= $no++ ?></td>
                                         <td><?= $row['program'] ?></td>
                                         <td><?= $row['kegiatan'] ?></td>
                                         <td><?= $row['kro'] ?></td>
@@ -245,6 +241,7 @@
                                 <?php endforeach; ?>
                             <?php else: ?>
                                 <tr>
+                                    <td>-</td>
                                     <td>-</td>
                                     <td>-</td>
                                     <td>-</td>

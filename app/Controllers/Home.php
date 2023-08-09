@@ -46,17 +46,17 @@ class Home extends BaseController
     public function cek()
     {
         
-        $nama = $this->request->getPost('nama');
+        // $nama = $this->request->getPost('nama');
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-        var_dump($nama,$email,$password,$hashedPassword);
+        // $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        // var_dump($nama,$email,$password,$hashedPassword);
         $userModel = new UserModel();
-        $user = $userModel->where('nama', $nama)->first();
+        $user = $userModel->where('email', $email)->first();
     
         if ($user && password_verify($password, $user['password'])) {
             $this->session->set('logged_in', true);
-            $this->session->set('nama', $nama);
+            // $this->session->set('nama', $nama);
             return redirect()->to('/');
         } else {
             return redirect()->to('/login');
