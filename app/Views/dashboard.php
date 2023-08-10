@@ -15,11 +15,14 @@
 
         <div id="page-content-wrapper" class="container-fluid" style="height: calc(100vh - 56px); overflow-y: auto;">
             <header class="bg-white p-3 d-flex justify-content-between align-items-center">
-                <h4>Dashboard</h4>
+            <div class="d-flex align-items-center">
+                <img src="<?= base_url('assets/logo-djpb.png') ?>" alt="Logo DJPB" width="100" height="50" class="me-2">
+                <h4 class="mt-2">Dashboard</h4>
+            </div>
                 <div>
-                    <span class="text-right"><span class="text-right">
-            <a href="<?= site_url('/logout') ?>" class="text-decoration-none">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        </span></span>
+                    <span class="text-right">
+                        <a href="<?= site_url('/logout') ?>" style="color: #FFA500;" class="text-decoration-none">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </span>
                 </div>
             </header>
 
@@ -114,13 +117,23 @@
                                         <?php endif; ?>
                                     </select>
                                 </div>
-                                <div class="col-md-6 mt-4">
-                                    <!-- <button type="button" name="filter" id="filter" class="btn btn-dark">Filter</button> -->
-                                    <button type="submit" class="btn btn-dark">Filter</button>
-                                    <!-- <button type="button" name="reset" id="reset" class="btn btn-dark">Reset</button> -->
-                                    <a href="<?= site_url('/') ?>" class="btn btn-dark">Reset</a>
+                                <div class="col-md-6 mb-4">
+                                    <label for="kdakun" class="form-label">Kd akun</label>
+                                    <select class="form-select" id="kdakun" name="kdakun" <?php if (isset($result)) echo 'disabled'; ?>>
+                                        <?php if (isset($result)): ?>
+                                            <option value="<?= $selectedSubkomponen ?>"><?= $selectedSubkomponen ?></option>
+                                        <?php else: ?>
+                                            <!-- Options for Form 7 -->
+                                        <?php endif; ?>
+                                    </select>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <!-- <button type="button" name="filter" id="filter" class="btn btn-dark">Filter</button> -->
+                            <button type="submit" class="btn btn-dark text-dark" style="background-color: #f9e8b2; border-color: #FFA500;">Filter</button>
+                            <!-- <button type="button" name="reset" id="reset" class="btn btn-dark">Reset</button> -->
+                            <a href="<?= site_url('/') ?>" class="btn btn-dark text-dark" style="background-color: #f9e8b2; border-color: #FFA500;">Reset</a>
                         </div>
                     </div>
                     </form>
@@ -172,43 +185,51 @@
                     }
                 </style>
 
-                
-            </div>
-            <div class="row mt-2 tabel">
-                <div class="col">
-                    <table class="table caption-top">
-                        <thead>
-                            <tr>
-                                <th scope="col">No</th>
-                                <th scope="col"><i class="fas fa-money-bill-wave dashboard-box-icon"></i> Pagu</th>
-                                <th scope="col"><i class="fas fa-chart-line dashboard-box-icon"></i> Realisasi</th>
-                                <th scope="col"><i class="fas fa-coins dashboard-box-icon"></i> Sisa Pagu</th>
-                                <th scope="col"><i class="fas fa-percent dashboard-box-icon"></i> Persentase</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                <div class="row mt-4">
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-money-bill-wave dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Pagu</p>
                             <?php if (isset($result)): ?>
-                                <?php $no = 1; ?>
-                                <?php foreach ($result as $row): ?>
-                                    <tr>
-                                        <td><?= $no++ ?></td>
-                                        <td><?= $row['pagu'] ?></td>
-                                        <td><?= $row['e_realisasi'] ?></td>
-                                        <td><?= $row['sisa_pagu'] ?></td>
-                                        <td><?= $row['realisasi'] ?></td>
-                                    </tr>
-                                <?php endforeach; ?>
+                                <p class="dashboard-box-value"><?= $result[0]['pagu'] ?></p>
                             <?php else: ?>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
+                                <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
-                        </tbody>
-                    </table>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-chart-line dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Realisasi</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['e_realisasi'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-coins dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Sisa Pagu</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['sisa_pagu'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-percent dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Persentase</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['realisasi'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mt-2 tabel">
@@ -216,7 +237,6 @@
                     <table class="table caption-top">
                         <thead>
                             <tr>
-                                <th scope="col">No</th>
                                 <th scope="col">Program</th>
                                 <th scope="col">Kegiatan</th>
                                 <th scope="col">KRO</th>
@@ -227,10 +247,8 @@
                         </thead>
                         <tbody>
                             <?php if (isset($result)): ?>
-                                <?php $no = 1; ?>
                                 <?php foreach ($result as $row): ?>
                                     <tr>
-                                        <td><?= $no++ ?></td>
                                         <td><?= $row['program'] ?></td>
                                         <td><?= $row['kegiatan'] ?></td>
                                         <td><?= $row['kro'] ?></td>
@@ -247,7 +265,6 @@
                                     <td>-</td>
                                     <td>-</td>
                                     <td>-</td>
-                                    <td>-</td>
                                 </tr>
                             <?php endif; ?>
                         </tbody>
@@ -256,7 +273,7 @@
             </div>
 
             <footer class="bg-light p-3 fixed-bottom">
-                <p>&copy; 2023 Nama Perusahaan. Hak Cipta Dilindungi.</p>
+                <p>&copy; 2023 Simangga. Hak Cipta Dilindungi.</p>
             </footer>
         </div>
     </div>
@@ -468,6 +485,48 @@
             })
             .catch(error => {
                 console.error('Error fetching subkomponen:', error);
+            });
+    });
+</script>
+
+<script>
+    const bidangSelect7 = document.getElementById('bidang');
+    const programSelect7 = document.getElementById('program');
+    const kegiatanSelect6 = document.getElementById('kegiatan');
+    const kroSelect5 = document.getElementById('kro');
+    const roSelect4 = document.getElementById('ro');
+    const komponenSelect3 = document.getElementById('komponen');
+    const subKomponenSelect2 = document.getElementById('subkomponen');
+    const kdAkunSelect = document.getElementById('kdakun');
+
+    subKomponenSelect2.addEventListener('change', () => {
+        const selectedBidang = bidangSelect7.value;
+        const selectedProgram = programSelect7.value;
+        const selectedKegiatan = kegiatanSelect6.value;
+        const selectedKRO = kroSelect5.value;
+        const selectedRO = roSelect4.value;
+        const selectedKomponen = komponenSelect3.value;
+        const selectedSubKomponen = subKomponenSelect2.value;
+
+        fetch(`home/get-kdAkun?bidang=${selectedBidang}&program=${selectedProgram}&kegiatan=${selectedKegiatan}&kro=${selectedKRO}&ro=${selectedRO}&komponen=${selectedKomponen}&subkomponen=${selectedSubKomponen}`)
+            .then(response => response.json())
+            .then(data => {
+                kdAkunSelect.innerHTML = ''; // Clear existing options
+
+                const defaultOption = document.createElement('option');
+                defaultOption.value = '';
+                defaultOption.text = 'Pilih Salah Satu';
+                kdAkunSelect.appendChild(defaultOption);
+
+                data.forEach(program => {
+                    const option = document.createElement('option');
+                    option.value = program.kd_akun;
+                    option.text = program.kd_akun;
+                    kdAkunSelect.appendChild(option);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching kdakun:', error);
             });
     });
 </script>

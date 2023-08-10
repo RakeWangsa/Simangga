@@ -105,9 +105,10 @@ class Home extends BaseController
         $selectedRo = $this->request->getPost('ro');
         $selectedKomponen = $this->request->getPost('komponen');
         $selectedSubkomponen = $this->request->getPost('subkomponen');
+        $selectedKdAkun = $this->request->getPost('kdakun');
         // var_dump($selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen);
         $db = \Config\Database::connect();
-        $query = $db->query("SELECT * FROM tbl_pagu WHERE bidang = ? AND kd_program = ? AND kd_kegiatan = ? AND kd_kro = ? AND kd_ro = ? AND kd_komponen = ? AND kd_sub_komponen = ?", [$selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen]);
+        $query = $db->query("SELECT * FROM tbl_pagu WHERE bidang = ? AND kd_program = ? AND kd_kegiatan = ? AND kd_kro = ? AND kd_ro = ? AND kd_komponen = ? AND kd_sub_komponen = ? AND kd_akun = ?", [$selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen,$selectedKdAkun]);
         $result = $query->getResultArray();
         // var_dump($result);
         return view('dashboard', ['selectedBidang' => $selectedBidang, 'selectedProgram' => $selectedProgram, 'selectedKegiatan' => $selectedKegiatan, 'selectedKro' => $selectedKro, 'selectedRo' => $selectedRo, 'selectedKomponen' =>  $selectedKomponen, 'selectedSubkomponen' => $selectedSubkomponen, 'result' => $result]);
@@ -194,6 +195,24 @@ class Home extends BaseController
         $db = \Config\Database::connect();
         // $query = $db->query("SELECT distinct kd_sub_komponen FROM tbl_pagu WHERE kd_komponen = ?", [$selectedKomponen]);
         $query = $db->query("SELECT distinct kd_sub_komponen FROM tbl_pagu WHERE bidang = ? AND kd_program = ? AND kd_kegiatan = ? AND kd_kro = ? AND kd_ro = ? AND kd_komponen = ?", [$selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKRO,$selectedRO,$selectedKomponen]);
+        $programs = $query->getResultArray();
+
+        return $this->response->setJSON($programs);
+    }
+
+    public function getKdAkun()
+    {
+        $selectedBidang = $this->request->getGet('bidang');
+        $selectedProgram = $this->request->getGet('program');
+        $selectedKegiatan = $this->request->getGet('kegiatan');
+        $selectedKRO = $this->request->getGet('kro');
+        $selectedRO = $this->request->getGet('ro');
+        $selectedKomponen = $this->request->getGet('komponen');
+        $selectedSubKomponen = $this->request->getGet('subkomponen');
+
+        $db = \Config\Database::connect();
+        // $query = $db->query("SELECT distinct kd_sub_komponen FROM tbl_pagu WHERE kd_komponen = ?", [$selectedKomponen]);
+        $query = $db->query("SELECT distinct kd_akun FROM tbl_pagu WHERE bidang = ? AND kd_program = ? AND kd_kegiatan = ? AND kd_kro = ? AND kd_ro = ? AND kd_komponen = ? AND kd_sub_komponen = ?", [$selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKRO,$selectedRO,$selectedKomponen,$selectedSubKomponen]);
         $programs = $query->getResultArray();
 
         return $this->response->setJSON($programs);
