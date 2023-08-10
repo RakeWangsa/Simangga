@@ -14,11 +14,11 @@
                     <!-- <img src="<?= base_url('assets/logo-Simangga.png') ?>" alt="Logo" width="80"> -->
                     <h4 class="card-title text-center mb-4">Login</h4>
                     <form method="post" action="<?= base_url('login/cek') ?>">
-                        <div class="mb-3">
+                        <div class="mb-3 text-start">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" name="email" class="form-control" placeholder="Email" style="border: 2px solid #FFA500;" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 text-start">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" name="password" class="form-control" placeholder="Password" style="border: 2px solid #FFA500;" required>
                         </div>

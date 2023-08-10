@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="bidang" class="form-label">Bidang/Bagian</label>
-                                    <select class="form-select" id="bidang" name="bidang" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="bidang" name="bidang" <?php if (isset($result)) echo 'disabled'; ?> required>
                                     <?php if (isset($result)): ?>
                                         <option value="<?= $selectedBidang ?>"><?= $selectedBidang ?></option>
                                     <?php else: ?>
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="program" class="form-label">Program</label>
-                                    <select class="form-select" id="program" name="program" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="program" name="program" <?php if (isset($result)) echo 'disabled'; ?> required>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedProgram ?>"><?= $selectedProgram ?></option>
                                         <?php else: ?>
@@ -61,7 +61,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="kegiatan" class="form-label">Kegiatan</label>
-                                    <select class="form-select" id="kegiatan" name="kegiatan" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="kegiatan" name="kegiatan" <?php if (isset($result)) echo 'disabled'; ?> required>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedKegiatan ?>"><?= $selectedKegiatan ?></option>
                                         <?php else: ?>
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="kro" class="form-label">KRO</label>
-                                    <select class="form-select" id="kro" name="kro" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="kro" name="kro" <?php if (isset($result)) echo 'disabled'; ?> required>
                                         <<?php if (isset($result)): ?>
                                             <option value="<?= $selectedKro ?>"><?= $selectedKro ?></option>
                                         <?php else: ?>
@@ -85,7 +85,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="ro" class="form-label">RO</label>
-                                    <select class="form-select" id="ro" name="ro" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="ro" name="ro" <?php if (isset($result)) echo 'disabled'; ?> required>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedRo ?>"><?= $selectedRo ?></option>
                                         <?php else: ?>
@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="komponen" class="form-label">Komponen</label>
-                                    <select class="form-select" id="komponen" name="komponen" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="komponen" name="komponen" <?php if (isset($result)) echo 'disabled'; ?> required>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedKomponen ?>"><?= $selectedKomponen ?></option>
                                         <?php else: ?>
@@ -109,7 +109,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="subkomponen" class="form-label">Subkomponen</label>
-                                    <select class="form-select" id="subkomponen" name="subkomponen" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="subkomponen" name="subkomponen" <?php if (isset($result)) echo 'disabled'; ?> required>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedSubkomponen ?>"><?= $selectedSubkomponen ?></option>
                                         <?php else: ?>
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="kdakun" class="form-label">Kd akun</label>
-                                    <select class="form-select" id="kdakun" name="kdakun" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="kdakun" name="kdakun" <?php if (isset($result)) echo 'disabled'; ?> required>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedSubkomponen ?>"><?= $selectedSubkomponen ?></option>
                                         <?php else: ?>
