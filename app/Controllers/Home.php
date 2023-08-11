@@ -47,19 +47,24 @@ class Home extends BaseController
     {
         
         // $nama = $this->request->getPost('nama');
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
+        $nama = $this->request->getPost('nama');
+        $nip = $this->request->getPost('nip');
         // $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
         // var_dump($nama,$email,$password,$hashedPassword);
         $userModel = new UserModel();
-        $user = $userModel->where('email', $email)->first();
-    
-        if ($user && password_verify($password, $user['password'])) {
-            $this->session->set('logged_in', true);
-            // $this->session->set('nama', $nama);
-            return redirect()->to('/');
-        } else {
-            return redirect()->to('/login');
+        $user = $userModel->where('Nama_Pegawai', $nama)->first();
+        if(isset($user)){
+            if ($user['NIP_Pegawai']==$nip) {
+                $this->session->set('logged_in', true);
+                // $this->session->set('nama', $nama);
+                return redirect()->to('/');
+            } else {
+                $data['error'] = 'Login gagal, Nama dan NIP tidak sesuai.';
+                return redirect()->to('/login')->with('error', $data['error']);
+            }
+        }else{
+            $data['error'] = 'Login gagal, Nama dan NIP tidak sesuai.';
+            return redirect()->to('/login')->with('error', $data['error']);
         }
     }
 
@@ -79,18 +84,23 @@ class Home extends BaseController
     {
         
         $nama = $this->request->getPost('nama');
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $nip = $this->request->getPost('nip');
+
 
         $userModel = new UserModel();
-        $data = [
-            'nama' => $nama,
-            'email' => $email,
-            'password' => $hashedPassword,
-        ];
-        $userModel->insert($data);
-        return view('login');
+        $user = $userModel->where('Nama_Pegawai', $nama)->first();
+        if(isset($user)){
+            $data['error'] = 'Registrasi Gagal, Nama sudah terdaftar.';
+            return redirect()->to('/register')->with('error', $data['error']);
+        }else{
+            $data = [
+                'Nama_Pegawai' => $nama,
+                'NIP_Pegawai' => $nip,
+            ];
+            $userModel->insert($data);
+            $data['success'] = 'Registrasi berhasil, Silahkan login.';
+            return redirect()->to('/login')->with('success', $data['success']);
+        }
     }
 
     public function filter()
