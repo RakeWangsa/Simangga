@@ -108,6 +108,7 @@ class Home extends BaseController
         if (!$this->session->get('logged_in')) {
             return redirect()->to('/login');
         }
+        
         $selectedBidang = $this->request->getPost('bidang');
         $selectedProgram = $this->request->getPost('program');
         $selectedKegiatan = $this->request->getPost('kegiatan');
@@ -116,13 +117,53 @@ class Home extends BaseController
         $selectedKomponen = $this->request->getPost('komponen');
         $selectedSubkomponen = $this->request->getPost('subkomponen');
         $selectedKdAkun = $this->request->getPost('kdakun');
-        // var_dump($selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen);
+
         $db = \Config\Database::connect();
-        $query = $db->query("SELECT * FROM tbl_pagu WHERE bidang = ? AND kd_program = ? AND kd_kegiatan = ? AND kd_kro = ? AND kd_ro = ? AND kd_komponen = ? AND kd_sub_komponen = ? AND kd_akun = ?", [$selectedBidang,$selectedProgram,$selectedKegiatan,$selectedKro,$selectedRo,$selectedKomponen,$selectedSubkomponen,$selectedKdAkun]);
-        $result = $query->getResultArray();
-        // var_dump($result);
-        return view('dashboard', ['selectedBidang' => $selectedBidang, 'selectedProgram' => $selectedProgram, 'selectedKegiatan' => $selectedKegiatan, 'selectedKro' => $selectedKro, 'selectedRo' => $selectedRo, 'selectedKomponen' =>  $selectedKomponen, 'selectedSubkomponen' => $selectedSubkomponen, 'result' => $result]);
+
+        $query = "SELECT * FROM tbl_pagu WHERE";
+
+        $conditions = array(
+            'bidang' => $selectedBidang,
+            'kd_program' => $selectedProgram,
+            'kd_kegiatan' => $selectedKegiatan,
+            'kd_kro' => $selectedKro,
+            'kd_ro' => $selectedRo,
+            'kd_komponen' => $selectedKomponen,
+            'kd_sub_komponen' => $selectedSubkomponen,
+            'kd_akun' => $selectedKdAkun,
+        );
+
+        $whereClause = "";
+
+        foreach ($conditions as $field => $value) {
+            if ($value !== '') {
+                $whereClause .= " $field = '$value' AND";
+            } else {
+                break; // Stop when an empty value is encountered
+            }
+        }
+
+        // Remove trailing "AND" if it exists
+        $whereClause = rtrim($whereClause, " AND");
+
+        // Append the constructed WHERE clause to the query
+        $query .= $whereClause;
+
+        $result = $db->query($query)->getResultArray();
+
+        return view('dashboard', [
+            'selectedBidang' => $selectedBidang,
+            'selectedProgram' => $selectedProgram,
+            'selectedKegiatan' => $selectedKegiatan,
+            'selectedKro' => $selectedKro,
+            'selectedRo' => $selectedRo,
+            'selectedKomponen' => $selectedKomponen,
+            'selectedSubkomponen' => $selectedSubkomponen,
+            'selectedKdAkun' => $selectedKdAkun,
+            'result' => $result
+        ]);
     }
+
 
     public function getPrograms()
     {

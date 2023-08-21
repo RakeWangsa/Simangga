@@ -24,7 +24,7 @@
         <a href="<?= site_url('/') ?>" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center">
         <i class="fa fa-search me-3" aria-hidden="true"></i>Anggaran
         </a>
-        <a href="<?= base_url('Laporan Fa Detail (16 Segmen).pdf') ?>" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center" download>
+        <a href="<?= base_url('assets/Laporan Fa Detail (16 Segmen).pdf') ?>" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center" download>
         <i class="fa fa-download me-3" aria-hidden="true"></i>FA Detail
         </a>
         <a href="<?= site_url('/logout') ?>" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center">
@@ -56,7 +56,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="bidang" class="form-label">Bidang/Bagian</label>
-                                    <select class="form-select" id="bidang" name="bidang" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="bidang" name="bidang" <?php if (isset($result)) echo 'disabled'; ?>>
                                     <?php if (isset($result)): ?>
                                         <option value="<?= $selectedBidang ?>"><?= $selectedBidang ?></option>
                                     <?php else: ?>
@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="program" class="form-label">Program</label>
-                                    <select class="form-select" id="program" name="program" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="program" name="program" <?php if (isset($selectedProgram)) echo 'disabled'; ?>>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedProgram ?>"><?= $selectedProgram ?></option>
                                         <?php else: ?>
@@ -82,7 +82,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="kegiatan" class="form-label">Kegiatan</label>
-                                    <select class="form-select" id="kegiatan" name="kegiatan" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="kegiatan" name="kegiatan" <?php if (isset($selectedKegiatan)) echo 'disabled'; ?>>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedKegiatan ?>"><?= $selectedKegiatan ?></option>
                                         <?php else: ?>
@@ -92,7 +92,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="kro" class="form-label">KRO</label>
-                                    <select class="form-select" id="kro" name="kro" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="kro" name="kro" <?php if (isset($selectedKro)) echo 'disabled'; ?>>
                                         <<?php if (isset($result)): ?>
                                             <option value="<?= $selectedKro ?>"><?= $selectedKro ?></option>
                                         <?php else: ?>
@@ -106,7 +106,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="ro" class="form-label">RO</label>
-                                    <select class="form-select" id="ro" name="ro" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="ro" name="ro" <?php if (isset($selectedRo)) echo 'disabled'; ?>>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedRo ?>"><?= $selectedRo ?></option>
                                         <?php else: ?>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="komponen" class="form-label">Komponen</label>
-                                    <select class="form-select" id="komponen" name="komponen" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="komponen" name="komponen" <?php if (isset($selectedKomponen)) echo 'disabled'; ?>>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedKomponen ?>"><?= $selectedKomponen ?></option>
                                         <?php else: ?>
@@ -130,7 +130,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="subkomponen" class="form-label">Subkomponen</label>
-                                    <select class="form-select" id="subkomponen" name="subkomponen" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="subkomponen" name="subkomponen" <?php if (isset($selectedSubkomponen)) echo 'disabled'; ?>>
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedSubkomponen ?>"><?= $selectedSubkomponen ?></option>
                                         <?php else: ?>
@@ -140,9 +140,9 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="kdakun" class="form-label">Kd akun</label>
-                                    <select class="form-select" id="kdakun" name="kdakun" <?php if (isset($result)) echo 'disabled'; ?> required>
+                                    <select class="form-select" id="kdakun" name="kdakun" <?php if (isset($selectedKdAkun)) echo 'disabled'; ?>>
                                         <?php if (isset($result)): ?>
-                                            <option value="<?= $selectedSubkomponen ?>"><?= $selectedSubkomponen ?></option>
+                                            <option value="<?= $selectedKdAkun ?>"><?= $selectedKdAkun ?></option>
                                         <?php else: ?>
                                             <!-- Options for Form 7 -->
                                         <?php endif; ?>
@@ -212,7 +212,7 @@
                             <i class="fas fa-money-bill-wave dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Pagu</p>
                             <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['pagu'] ?></p>
+                                
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
@@ -223,7 +223,7 @@
                             <i class="fas fa-chart-line dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Realisasi</p>
                             <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['e_realisasi'] ?></p>
+                                
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
@@ -234,7 +234,7 @@
                             <i class="fas fa-coins dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Sisa Pagu</p>
                             <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['sisa_pagu'] ?></p>
+                                
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
@@ -245,7 +245,7 @@
                             <i class="fas fa-percent dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Persentase</p>
                             <?php if (isset($result)): ?>
-                                <p class="dashboard-box-value"><?= $result[0]['realisasi'] ?></p>
+                                
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
