@@ -52,14 +52,15 @@
                     <div class="row">
                         <div class="col-md-3">
 
-                        <form action="<?= site_url('/home/filter') ?>" method="post">
+                        <form action="<?= site_url('/home/filter') ?>" method="post" id="filter">
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="bidang" class="form-label">Bidang/Bagian</label>
-                                    <select class="form-select" id="bidang" name="bidang" <?php if (isset($result)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="bidang" name="bidang">
                                     <?php if (isset($result)): ?>
                                         <option value="<?= $selectedBidang ?>"><?= $selectedBidang ?></option>
                                     <?php else: ?>
+                                        <option value="">Pilih Salah Satu</option>
                                         <?php foreach ($bidangData as $bidangRow) : ?>
                                             <option value="<?= esc($bidangRow['bidang']) ?>"><?= esc($bidangRow['bidang']) ?></option>
                                         <?php endforeach; ?>
@@ -68,7 +69,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="program" class="form-label">Program</label>
-                                    <select class="form-select" id="program" name="program" <?php if (isset($selectedProgram)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="program" name="program">
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedProgram ?>"><?= $selectedProgram ?></option>
                                         <?php else: ?>
@@ -82,7 +83,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="kegiatan" class="form-label">Kegiatan</label>
-                                    <select class="form-select" id="kegiatan" name="kegiatan" <?php if (isset($selectedKegiatan)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="kegiatan" name="kegiatan">
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedKegiatan ?>"><?= $selectedKegiatan ?></option>
                                         <?php else: ?>
@@ -92,7 +93,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="kro" class="form-label">KRO</label>
-                                    <select class="form-select" id="kro" name="kro" <?php if (isset($selectedKro)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="kro" name="kro">
                                         <<?php if (isset($result)): ?>
                                             <option value="<?= $selectedKro ?>"><?= $selectedKro ?></option>
                                         <?php else: ?>
@@ -106,7 +107,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="ro" class="form-label">RO</label>
-                                    <select class="form-select" id="ro" name="ro" <?php if (isset($selectedRo)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="ro" name="ro">
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedRo ?>"><?= $selectedRo ?></option>
                                         <?php else: ?>
@@ -116,7 +117,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="komponen" class="form-label">Komponen</label>
-                                    <select class="form-select" id="komponen" name="komponen" <?php if (isset($selectedKomponen)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="komponen" name="komponen">
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedKomponen ?>"><?= $selectedKomponen ?></option>
                                         <?php else: ?>
@@ -130,7 +131,7 @@
                             <div class="row">
                                 <div class="col-md-6 mb-4">
                                     <label for="subkomponen" class="form-label">Subkomponen</label>
-                                    <select class="form-select" id="subkomponen" name="subkomponen" <?php if (isset($selectedSubkomponen)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="subkomponen" name="subkomponen">
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedSubkomponen ?>"><?= $selectedSubkomponen ?></option>
                                         <?php else: ?>
@@ -140,7 +141,7 @@
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <label for="kdakun" class="form-label">Kd akun</label>
-                                    <select class="form-select" id="kdakun" name="kdakun" <?php if (isset($selectedKdAkun)) echo 'disabled'; ?>>
+                                    <select class="form-select" id="kdakun" name="kdakun">
                                         <?php if (isset($result)): ?>
                                             <option value="<?= $selectedKdAkun ?>"><?= $selectedKdAkun ?></option>
                                         <?php else: ?>
@@ -205,14 +206,17 @@
 
                     }
                 </style>
-
+                <?php if (isset($result)): ?>
+                    <!-- filter -->
+                    <?php if ($selectedKdAkun!=''): ?>
+                        <!-- kd akun terisi -->
                 <div class="row mt-4">
                     <div class="col-md-3 mb-4">
                         <div class="dashboard-box">
                             <i class="fas fa-money-bill-wave dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Pagu</p>
                             <?php if (isset($result)): ?>
-                                
+                                <p class="dashboard-box-value"><?= $result[0]['pagu'] ?></p>
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
@@ -223,7 +227,7 @@
                             <i class="fas fa-chart-line dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Realisasi</p>
                             <?php if (isset($result)): ?>
-                                
+                                <p class="dashboard-box-value"><?= $result[0]['e_realisasi'] ?></p>
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
@@ -234,7 +238,7 @@
                             <i class="fas fa-coins dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Sisa Pagu</p>
                             <?php if (isset($result)): ?>
-                                
+                                <p class="dashboard-box-value"><?= $result[0]['sisa_pagu'] ?></p>
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
@@ -245,7 +249,7 @@
                             <i class="fas fa-percent dashboard-box-icon"></i>
                             <p class="dashboard-box-label">Persentase</p>
                             <?php if (isset($result)): ?>
-                                
+                                <p class="dashboard-box-value"><?= $result[0]['realisasi'] ?></p>
                             <?php else: ?>
                                 <p class="dashboard-box-value">-</p>
                             <?php endif; ?>
@@ -292,6 +296,181 @@
                     </table>
                 </div>
             </div>
+
+            <?php else: ?>
+            <!-- kd akun tidak terisi -->
+                
+            </div>
+            <div class="row mt-2 tabel">
+                <div class="col">
+                    <table class="table caption-top">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col"><i class="fas fa-money-bill-wave dashboard-box-icon"></i> Pagu</th>
+                                <th scope="col"><i class="fas fa-chart-line dashboard-box-icon"></i> Realisasi</th>
+                                <th scope="col"><i class="fas fa-coins dashboard-box-icon"></i> Sisa Pagu</th>
+                                <th scope="col"><i class="fas fa-percent dashboard-box-icon"></i> Persentase</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if (isset($result)): ?>
+                                <?php $no = 1; ?>
+                                <?php foreach ($result as $row): ?>
+                                    <tr>
+                                        <td><?= $no++ ?></td>
+                                        <td><?= $row['pagu'] ?></td>
+                                        <td><?= $row['e_realisasi'] ?></td>
+                                        <td><?= $row['sisa_pagu'] ?></td>
+                                        <td><?= $row['realisasi'] ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mt-2 tabel">
+                <div class="col">
+                    <table class="table caption-top">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Program</th>
+                                <th scope="col">Kegiatan</th>
+                                <th scope="col">KRO</th>
+                                <th scope="col">RO</th>
+                                <th scope="col">Komponen</th>
+                                <th scope="col">Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if (isset($result)): ?>
+                                <?php $no = 1; ?>
+                                <?php foreach ($result as $row): ?>
+                                    <tr>
+                                        <td><?= $no++ ?></td>
+                                        <td><?= $row['program'] ?></td>
+                                        <td><?= $row['kegiatan'] ?></td>
+                                        <td><?= $row['kro'] ?></td>
+                                        <td><?= $row['ro'] ?></td>
+                                        <td><?= $row['komponen'] ?></td>
+                                        <td><?= $row['detail'] ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                <?php endif; ?>
+                <?php else: ?>
+                    <div class="row mt-4">
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-money-bill-wave dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Pagu</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['pagu'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-chart-line dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Realisasi</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['e_realisasi'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-coins dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Sisa Pagu</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['sisa_pagu'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="dashboard-box">
+                            <i class="fas fa-percent dashboard-box-icon"></i>
+                            <p class="dashboard-box-label">Persentase</p>
+                            <?php if (isset($result)): ?>
+                                <p class="dashboard-box-value"><?= $result[0]['realisasi'] ?></p>
+                            <?php else: ?>
+                                <p class="dashboard-box-value">-</p>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 tabel">
+                <div class="col">
+                    <table class="table caption-top">
+                        <thead>
+                            <tr>
+                                <th scope="col">Program</th>
+                                <th scope="col">Kegiatan</th>
+                                <th scope="col">KRO</th>
+                                <th scope="col">RO</th>
+                                <th scope="col">Komponen</th>
+                                <th scope="col">Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if (isset($result)): ?>
+                                <?php foreach ($result as $row): ?>
+                                    <tr>
+                                        <td><?= $row['program'] ?></td>
+                                        <td><?= $row['kegiatan'] ?></td>
+                                        <td><?= $row['kro'] ?></td>
+                                        <td><?= $row['ro'] ?></td>
+                                        <td><?= $row['komponen'] ?></td>
+                                        <td><?= $row['detail'] ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            <?php else: ?>
+                                <tr>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <?php endif; ?>
 
             <footer class="bg-light p-3 fixed-bottom">
                 <p>&copy; 2023 Simangga. Hak Cipta Dilindungi.</p>
@@ -550,4 +729,23 @@
                 console.error('Error fetching kdakun:', error);
             });
     });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('filter'); // Ganti dengan ID formulir Anda
+
+    form.addEventListener('submit', (event) => {
+        const bidangSelect = document.getElementById('bidang');
+        const selectedValue = bidangSelect.value;
+
+        // Cek apakah opsi "Pilih Salah Satu" yang dipilih
+        if (selectedValue === '') {
+            event.preventDefault(); // Mencegah pengiriman formulir
+            alert('Harap pilih opsi yang valid sebelum mengirimkan formulir.');
+        }
+    });
+
+});
+
 </script>
