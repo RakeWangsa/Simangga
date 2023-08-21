@@ -12,16 +12,37 @@
 
 <body>
     <div class="d-flex" id="wrapper">
+        
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+    <div class="sidebar-header text-center">
+        <img src="<?= base_url('assets/logo-djpb.png') ?>" alt="Logo DJPB" width="150" height="75" style="margin-right: 30px;">
+    </div>
+    <div class="list-group list-group-flush mt-4">
+        <a href="https://lookerstudio.google.com/reporting/ce66d3d5-2d10-4114-84b8-072ac162d29d/page/p_uad788b61c?s=s3u7Y5cno7k" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center">
+        <i class="fa fa-bars me-3" aria-hidden="true"></i>Dashboard
+        </a>
+        <a href="<?= site_url('/') ?>" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center">
+        <i class="fa fa-search me-3" aria-hidden="true"></i>Anggaran
+        </a>
+        <a href="<?= base_url('Laporan Fa Detail (16 Segmen).pdf') ?>" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center" download>
+        <i class="fa fa-download me-3" aria-hidden="true"></i>FA Detail
+        </a>
+        <a href="<?= site_url('/logout') ?>" class="list-group-item list-group-item-action bg-dark text-light d-flex align-items-center">
+            <i class="fa fa-arrow-right me-3" aria-hidden="true"></i>Logout
+        </a>
+    </div>
+</div>
+
 
         <div id="page-content-wrapper" class="container-fluid" style="height: calc(100vh - 56px); overflow-y: auto;">
             <header class="bg-white p-3 d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img src="<?= base_url('assets/logo-djpb.png') ?>" alt="Logo DJPB" width="100" height="50" class="me-2">
-                <h4 class="mt-2">Dashboard</h4>
+                
+                <h4 class="mt-2">Anggaran Tersedia</h4>
             </div>
                 <div>
                     <span class="text-right">
-                        <a href="<?= site_url('/logout') ?>" style="color: #FFA500;" class="text-decoration-none">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        <!-- <a href="<?= site_url('/logout') ?>" style="color: #FFA500;" class="text-decoration-none">Logout <i class="fa fa-arrow-right" aria-hidden="true"></i></a> -->
                     </span>
                 </div>
             </header>
